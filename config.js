@@ -18,13 +18,13 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined ? './database.db' : 
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 // Export configuration variables
 module.exports = {
-  HANDLERS: (process.env.PREFIX || '^[.,!]').trim(),
+  HANDLERS: (process.env.PREFIX || '^[+,!]').trim(),
   BRANCH: "main",
   MODE: (process.env.MODE || 'private').toLowerCase(),
   ERROR_MSG: toBool(process.env.ERROR_MSG) || true,
   LOG_MSG: toBool(process.env.LOG_MSG) || true,
   READ_CMD: toBool(process.env.READ_CMD),
-  SESSION_ID: process.env.SESSION_ID || "Session id",
+  SESSION_ID: process.env.SESSION_ID || "izumi~4fdGGguB",
   MENU_URL: process.env.MENU_URL || "https://i.imgur.com/cO0TZJv.jpeg",
   CAPTION: process.env.CAPTION || "Iᴢᴜᴍɪ",
   READ_MSG: toBool(process.env.READ_MSG),
